@@ -309,7 +309,7 @@ def run_experiment(target_digit=7):
     # Create and train model
     model = MNISTPerceptron()
     model.train(X_train, y_train, X_test, y_test, 
-                epochs=10, batch_size=32, learning_rate=0.01)
+                epochs=5, batch_size=32, learning_rate=0.01)
     
     # Visualize results
     model.plot_training_history()
